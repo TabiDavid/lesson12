@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Here we have the home page of our wonderful site to find information about weather here and wherever we are!">
+    <link rel="shortcut icon" href="img/favicon(1).ico">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Soda Springs</title>
+    </head> 
+    <body onload="getUpdate(), pancakeD()">
+        <div class="container1">
+            <div id="pancake">Friday = Preston pancakes in the park! 9:00 a.m. at the city park.
+
+            </div>
+
+        <header class="headings">
+           <section>
+            <picture>
+                <img src="img/iconfinder_sunset_3521354.png" alt="The sun and the clound">
+            </picture>
+            </section>
+            <section class="">
+                <h1>Today Weather</h1>
+                <div class="m">Let's begin to rock on roll!</div>
+            </section>
+        </header>
+        <nav class="">
+          <ul class="navigation">
+              <li><a class="responsive" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/">Home</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/preston.html">Preston</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/soda-springs.html">Soda Springs</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/fish-haven.html">Fish Haven</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/gallery.html">Gallery</a></li>
+          </ul>
+
+        </nav>
+        
+        <main>
+            <h2>Soda Springs Town</h2>
+            <div class="herodiv">
+              <picture>
+                <source srcset="img/largesoda.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/mediumsoda.jpg" media="(min-width: 800px)">
+                <img src="img/smallsoda.jpg" alt="land scape">
+              </picture>
+                    <section id="weathersummary" class="stats">
+                        <h2>Weather Summary</h2>
+                        <p>Currently: <span id="currently"></span></p>
+                        <p>Current: <span id="current-temp"></span></p>
+                        <p>Wind Chill: <span id="windchill"></span></p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <p>Wind Speed: <span id="wind-speed"></span></p>
+                      </section>
+            </div>
+
+            <div>
+              <h3 id="h3">5 Day Forecast</h3>
+            </div>
+            <div class="forecast">
+              <div class="allboxes">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th id="day1">day1</th>
+                        <th id="day2">day2</th>
+                        <th id="day3">day3</th>
+                        <th id="day4">day4</th>
+                        <th id="day5">day5</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img src="img/iconfinder_sunset_3521354.png" id="icon1" class="img1" alt="wednesday"><span
+                            id="forecast1"
+                          ></span>
+                        </td>
+                        <td>
+                          <img src="img/iconfinder_sunset_3521354.png" id="icon2" class="img1" alt="Thursday"><span
+                            id="forecast2"
+                          ></span>
+                        </td>
+                        <td>
+                          <img src="img/iconfinder_sunset_3521354.png" id="icon3" class="img1" alt="Friday"><span
+                            id="forecast3"
+                          ></span>
+                        </td>
+                        <td>
+                          <img src="img/iconfinder_sunset_3521354.png" id="icon4"  class="img1" alt="Saturday"><span
+                            id="forecast4"
+                          ></span>
+                        </td>
+                        <td>
+                          <img src="img/iconfinder_sunset_3521354.png" id="icon5" class="img1" alt="Sunday"><span
+                            id="forecast5"
+                          ></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+          </div>
+            <div class="box">
+              <div>
+                
+                <h4>SODA SPRINGS INFORMATION</h4>
+                <br>
+
+                The city is named for the hundreds of natural springs 
+                of carbonated water that are located in and around the city. 
+                The springs were well known to Native Americans and were a famous 
+                landmark along the Oregon Trail in the middle 19th century. 
+                Today the city is also known as the location of the Soda Springs Geyser, 
+                which was unleashed in 1934 when "town fathers" were looking for hot 
+                water for a "hot pool" bathing attraction.</div>
+              <div><img id="women" src="img/land12.jpg" alt="Women sitting"></div>
+
+              <div>
+                <div id="map"></div>
+              </div>
+
+              <div>
+              <div>
+                <h4>CONTACT INFORMATION</h4>
+                <br>
+                <p class="texto">&#9737; Name: David Tabi</p><br>
+                <p class="texto">&#9743; Email: todayweather.live </p><br>
+                <p class="texto">&#9993; Phone : 593-455-5433</p><br></div>
+              
+              <img class="social" src="img/facebook.png" alt="facebook">
+              <img class="social" src="img/twitter.png" alt="twitter">
+              <img class="social" src="img/youtube.png" alt="youtube">
+
+            </div>
+              
+            </div>
+            <div id="events">
+              <h4>Annual Events</h4>
+               <div class="eventdiv"></div>
+            </div>
+
+        </main>
+        
+        <footer>
+            <div id="end">&copy; Today Weather | Attribution: <a href="http://OpenWeatherMap.org">OpenWeatherMap.org</a> | David Tabi
+                
+                <div id="outputDiv"></div>
+             </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/sodasprings.js"></script>
+    <script src="js/navdatefont.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS-ri_nNbLcRc3e8a4CnL0hpcWEIQqE5I&callback=initMap"
+    type="text/javascript"></script>
+    <script src="js/map.js"></script>
+    <script src="js/localizacion.js"></script>
+    
+   
+    </body>
+</html>

@@ -1,0 +1,274 @@
+/*size for phones and another devices*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+     background-color: grey;
+}
+
+#pancake{
+
+    position: relative;
+    margin: 0 auto;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(241, 241, 114);
+    
+}
+header {
+	background-color: rgb(80, 35, 56);
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trade Winds' ;
+    color: honeydew;
+	
+}
+h2 {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Trade Winds' ;
+   
+}
+p {
+font-family: 'Trade Winds';
+color: rgb(54, 10, 10);
+}
+
+.texto {
+    font-family: 'Roboto' ;
+    color: honeydew;
+}
+
+.social {
+    width: 20px;
+    height: 20px;
+}
+
+    footer div{
+
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(80, 35, 56);
+        font-family: 'Trade Winds' ;
+        color: honeydew;
+        
+
+        }
+.people img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+.people img {
+    filter: blur(0em);
+    transition: 3s;
+    padding: 5px;
+}
+
+/*here is the code for nav bar */
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #000;
+   
+}
+.navigation {
+    list-style: block;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+.navigation li:first-child {
+    display: block;
+    
+}
+.navigation li {
+    display: none;
+    
+}
+.navigation a {
+    display: block;
+    color:rgb(65, 206, 119);
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    text-align: center;
+}
+.navigation a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.responsive li {
+    display: block;
+}  
+main{
+    background-color: rgb(231, 210, 210);
+    padding: 8px;
+    width: 80%;
+    margin: auto;
+    
+    }
+    h2 {
+        padding: 25px;
+        text-align: center;
+        font-size: large;
+     
+        
+    }
+    .herodiv{
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+      
+    
+    }
+    #landscape {
+        width: 100%;
+    }
+    
+    
+    #weathersummary{
+        position: absolute;
+        top: 50px;
+        left: 15%;
+        background-color: honeydew;
+        padding: .5rem;
+        border-radius: 4px;
+        
+    
+    }
+
+    .forecast{
+        display: none; 
+        
+    }
+    h3 {
+        display: none;
+    }
+
+    .box {
+        border: 10px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .box > div {
+        display: block;
+        padding: 10px;
+        background-color: teal;
+        box-shadow: 2px 2px 10px rgb(0,0,0);
+        
+    }
+    
+   
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    div a {
+        color: honeydew;
+    }
+    
+    /* Home CSS*/
+
+    .townsection {
+
+        display: block;
+        margin: auto;
+        border: 1px black solid;
+        background-color: rgb(235, 220, 137);
+        max-width: 80%;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    
+    .cards section:hover {
+        background-color: whitesmoke;
+    }
+    
+    
+    h3 {
+        text-align: center;
+    }
+    
+    .townp {
+        text-align: center;
+        font-family: 'Roboto' ;
+        
+    }
+    
+    .townimage {
+        display: block;
+        width: 85%;
+        height: 300px;
+        margin: 10px auto;
+        box-shadow: 0 0 10px #1b1a1d;
+    }
+/* Storm center CSS*/
+
+legend {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+input {
+    padding: 5px;
+    margin: 4px;
+}
+.button {
+text-align: center;
+
+}
+
+.thank {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: large;
+}
+
+
+/*
+gallery image code
+*/
+.containpeople {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+#map {
+    width: 300px;
+    height: 300px;
+   
+    margin: auto;
+}
+#events {
+    
+    background-color: teal;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    line-height: 2em;
+}
+
+.eventdiv > div, h4, li{
+    text-align: center;
+    list-style-type: none;
+}
+
+
+ 

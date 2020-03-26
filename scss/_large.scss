@@ -1,0 +1,24 @@
+
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    .townsection {
+        display: block;
+        max-width: 94%;
+    }
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    /*gallery CSS*/
+
+    .containpeople {
+        max-width: 1024px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+       

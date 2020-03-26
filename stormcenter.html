@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Here you will find some pictures from weather and different lanscape looks">
+    <link rel="shortcut icon" href="img/favicon(1).ico">
+    <link rel="stylesheet" href="css/style.css">
+    
+  
+    <Script src="js/windchill.js"></Script>
+    <title>Preston Page, weather site give information every hour.</title>
+    </head> 
+    <body onload="getUpdate(), pancakeD()">
+        <div class="container1">
+            <div id="pancake">Friday = Preston pancakes in the park! 9:00 a.m. at the city park.
+
+            </div>
+
+        <header class="headings">
+           <section>
+            <picture>
+                <img src="img/iconfinder_sunset_3521354.png" alt="The sun and the clound">
+            </picture>
+            </section>
+            <section class="">
+                <h1>Today Weather</h1>
+                <div class="m">Let's begin to rock on roll!</div>
+            </section>
+        </header>
+        <nav class="">
+          <ul class="navigation">
+              <li><a class="responsive" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/">Home</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/preston-10.html">Preston</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/soda-springs.html">Soda Springs</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/fish-haven.html">Fish Haven</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+              <li><a href="https://tabidavid.github.io/lesson11/gallery.html">Gallery</a></li>
+          </ul>
+
+        </nav>
+        
+        <main>
+            <div>
+                <h2>FORM</h2>
+            </div>
+          
+                <form method="get" action="thanks.html">
+                  <fieldset>
+                      <legend>Data Information</legend>
+                    <label>* Full name:
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        pattern="[A-z\s]{5,}"
+                        required
+                        placeholder="Full name"></label>
+                    <br>
+                    <label>* Email: 
+                    <input type="email" name="email" 
+                    required placeholder="your@email.com"></label><br>
+        
+                    <label>* Phone Number:
+                      <input
+                        type="tel"
+                        name="phone"
+                        pattern="[0-9\s]{10,}"
+                        required
+                        placeholder="###-###-####">
+                        </label>
+                        <br>
+                        <label>* Zip Code:
+                            <input type="number" 
+                            name="zipCode" 
+                            id="zipCode" 
+                            placeholder="00000"
+                            required></label>
+        
+                  </fieldset>
+               
+                  <fieldset>
+                    <legend>Storm Information</legend>
+                    <label>Storm Date: <input type="date" name="theDate">
+                    </label>
+                    <br>
+                    <label>Storm Type:</label>
+                    <input
+                      list="storm-type-list"
+                      id="storm-type-choice"
+                      name="stchoice">
+        
+                    <datalist id="storm-type-list">
+                      <option value="Flash Flood"> </option>
+                      <option value="Hail"> </option>
+                      <option value="Hurricane"> </option>
+                      <option value="Thunderstorm"> </option>
+                      <option value="Tornado"> </option>
+                    </datalist>
+                        <br>
+                        <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                            <input type="range" 
+                            id="rating" 
+                            value="5" 
+                            min="1" 
+                            max="10" 
+                            step="1" 
+                            list="tickmarks" 
+                            oninput="adjustRating(this.value)" 
+                            onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+                            </label>
+                    
+                    <datalist id="tickmarks">
+                      <option value="0">
+                      <option value="1">
+                      <option value="2">
+                      <option value="3">
+                      <option value="4">
+                      <option value="5">
+                      <option value="6">
+                      <option value="7">
+                      <option value="8">
+                      <option value="9">
+                      <option value="10">
+                    </datalist>
+                        <br>
+                    <label for="region">Storm Region:</label>
+                    <select id="region" name="region">
+                      <option value="select" disabled selected >Select Region ...</option>
+                      <option value="preston">Preston</option>
+                      <option value="ssprings">Soda Springs</option>
+                      <option value="fhaven">Fish Haven</option>
+                    </select>
+                    <br>
+                  </fieldset>
+                  <fieldset>
+                      <Legend>Danger Level</Legend>
+                    <label>User in-danger level:</label>
+        
+                    <div class="selection">
+                        <label for="yes"><input type="radio" id="yes" name="danger1" value="yes">Yes</label>
+                    </div>
+
+                    <div class="selection">
+                        <label for="No"><input type="radio" id="No" name="danger2" value="no">No</label>
+                        </div>
+
+                        <div class="selection">
+                            <label for="maybe"><input type="radio" id="maybe" name="danger3" value="maybe">Maybe</label>
+                        </div>
+
+                  </fieldset>
+        
+                  <fieldset>
+                      <Legend>Secondary Information</Legend>
+                    <label>Additional information or comments:</label><br>
+                    <textarea name="information" id="comments" placeholder="Write something ..."></textarea>
+                  </fieldset>
+        
+                  <div class="button">
+                    <input type="submit">
+                  </div>
+                </form>
+        </main>
+        
+        <footer>
+            <div id="end">&copy; Today Weather | Attribution | David Tabi
+                
+                <div id="outputDiv"></div>
+             </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/lazyload.js" defer></script>
+    <script src="js/navdatefont.js"></script>
+    <script src="js/stormcenter.js"></script>
+    </body>
+</html>
